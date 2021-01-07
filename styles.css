@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
+
+:root {
+  --light-blue: #0291ee;
+  --med-blue: #0270ac;
+  --dark-blue: #01375b;
+  --yellow: #f4bb00;
+  --orange: #f77b00;
+  --pink: #eb1755;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 420px;
+  width: 320px;
+  position: relative;
+  border: 10px solid white;
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.item1 {
+  background-color: var(--light-blue);
+  background-image: radial-gradient(
+    transparent 15px,
+    var(--white) 15px 40px,
+    transparent 40px
+  );
+}
+
+.item2 {
+  display: grid;
+  background-color: var(--white);
+  grid-column: span 2;
+  padding: 5px;
+  align-content: center;
+  color: var(--dark-blue);
+}
+
+.item2 h3 {
+  margin: 0 0 5px 0;
+}
+
+.item3 {
+  background-color: var(--orange);
+  background-image: radial-gradient(
+    circle at 100% 50%,
+    var(--yellow) 50px,
+    transparent 50px
+  );
+}
+
+.item4 {
+  background-color: var(--yellow);
+  background-image: radial-gradient(
+    circle at 0 50%,
+    var(--orange) 50px,
+    transparent 50px
+  );
+}
+
+.item5 {
+  background-image: linear-gradient(
+    135deg,
+    var(--dark-blue) 50%,
+    var(--light-blue) 50%
+  );
+}
+
+.item6 {
+  display: grid;
+  place-content: center;
+  background-color: var(--yellow);
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.item7 {
+  display: grid;
+  place-content: center;
+  background-color: var(--pink);
+  color: var(--white);
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.item8 {
+  background-image: linear-gradient(
+    -135deg,
+    var(--med-blue) 50%,
+    var(--dark-blue) 50%
+  );
+}
+
+.item9 {
+  background-color: var(--white);
+  grid-column: span 2;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 7px,
+    var(--light-blue) 7px,
+    var(--light-blue) 15px
+  );
+}
+
+.item10 {
+  background-color: var(--white);
+  background-image: radial-gradient(
+    transparent 8px,
+    var(--pink) 8px,
+    var(--pink) 22px,
+    transparent 22px,
+    transparent 42px,
+    var(--pink) 42px
+  );
+}
